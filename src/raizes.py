@@ -37,11 +37,12 @@ def formatarComplexResult(realPart, imPart):
 
 #Computa a(s) raíz(es) de um polinômio de terceiro grau usando o método de Tartaglia-Cardano:
 def cardano(a,b,c,d):	
+import numpy as np
   if a == 0:
     print("O valor de a, deve ser diferente de 0")
   else:
     #converte a equação para forma x^3+Ax^2+Bx+C=0
-    A = b * a
+    A = b / a
     B = c / a
     C = d / a
 

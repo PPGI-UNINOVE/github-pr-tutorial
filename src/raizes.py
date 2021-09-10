@@ -17,8 +17,6 @@ def bhaskara(a, b, c):
         print(f"x1: {x1}, x2: {x2}")
 
 
-
-
 def formatarComplexResult(realPart, imPart):
 	#um caso simples
 	if (realPart == 0 and imPart == 0):
@@ -35,8 +33,10 @@ def formatarComplexResult(realPart, imPart):
 	return number
 
 
-#Computa a(s) raíz(es) de um polinômio de terceiro grau usando o método de Tartaglia-Cardano:
 def cardano(a,b,c,d):	
+"""
+Computa a(s) raíz(es) de um polinômio de terceiro grau usando o método de Tartaglia-Cardano:
+"""
 import numpy as np
   if a == 0:
     print("O valor de a, deve ser diferente de 0")
